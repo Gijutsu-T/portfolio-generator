@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= portfolio.name %>'s Portfolio</title>
+  <link rel="stylesheet" href="/public/styles/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1><%= portfolio.name %>'s Portfolio</h1>
+    <p><%= portfolio.bio %></p>
+    
+    <h2>Social Links</h2>
+    <ul>
+      <% portfolio.socialLinks.forEach(link => { %>
+        <li><a href="<%= link.link %>" target="_blank"><%= link.platform %></a></li>
+      <% }) %>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> Portfolio Generator</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Portfolio</title>
+  <link rel="stylesheet" href="/public/styles/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Create Your Portfolio</h1>
+    
+    <form id="portfolio-form" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="bio" placeholder="Your Bio" required></textarea>
+      
+      <div class="social-links">
+        <input type="text" name="socialLinks[0].platform" placeholder="Social Platform (e.g., Twitter)" required>
+        <input type="url" name="socialLinks[0].link" placeholder="Link to your profile" required>
+      </div>
+
+      <button type="submit">Create Portfolio</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; Portfolio Generator</p>
+  </footer>
+
+  <script src="/public/scripts/app.js"></script>
+</body>
+</html>

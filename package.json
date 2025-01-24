@@ -1,0 +1,22 @@
+{
+    "name": "portfolio-generator",
+    "version": "1.0.0",
+    "description": "A simple portfolio generator with Express and MongoDB",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.10.9",
+      "multer": "^1.4.2",
+      "cors": "^2.8.5",
+      "body-parser": "^1.19.0",
+      "dotenv": "^8.2.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4"
+    }
+  }
+  
